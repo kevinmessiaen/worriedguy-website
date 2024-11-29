@@ -1,9 +1,9 @@
-import logo from "./dexscreener.svg";
+import logo from "./radyum.svg";
 
-function X({size = 18}) {
+function Radyum({size = 20}) {
     return (
-        <img alt="DEX Screener" loading="lazy" width={size} height={size} decoding="async" data-nimg="1" src={logo} />
+        <img className={`bg-gray-900 rounded-[20px]`} alt="Radyum" loading="lazy" width={size} height={size} decoding="async" data-nimg="1" src={logo} />
     )
 }
 
-export default X;
+export default Radyum;

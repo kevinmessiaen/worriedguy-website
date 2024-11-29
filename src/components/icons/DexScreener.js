@@ -1,9 +1,9 @@
-import logo from "./instagram.svg";
+import logo from "./dexscreener.svg";
 
-function X({size = 18}) {
+function DexScreener({size = 18}) {
     return (
-        <img alt="Instagram" loading="lazy" width={size} height={size} decoding="async" data-nimg="1" src={logo} />
+        <img alt="DEX Screener" loading="lazy" width={size} height={size} decoding="async" data-nimg="1" src={logo} />
     )
 }
 
-export default X;
+export default DexScreener;
