@@ -13,22 +13,26 @@ function App() {
       <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
         <Header />
         <main>
-            <div className="container mx-auto flex flex-col items-center h-[calc(100vh-4.25rem)]">
-            <img src={logo} alt="Worried Guy selfie" className="max-w-full w-[32rem]" />
-            <h1 className="uppercase text-4xl font-bold font-chelsea-market text-center">
-              Just a Worried Guy
-            </h1>
-            <p className="text-xl font-chelsea-market text-center">
-              The only meme everyone relate to
-            </p>
-            <Button variant="outline" className="font-chelsea-market mt-4" asChild><a href="#about">Discover</a></Button>
+          <div className="h-[calc(100vh-4.25rem)] bg-[#8c8773]">
+            <div className="container mx-auto flex flex-col items-center">
+              <img src={logo} alt="Worried Guy selfie" className="w-[32rem] max-w-full" />
+              <h1 className="uppercase text-4xl font-bold font-chelsea-market text-center">
+                Just a Worried Guy
+              </h1>
+              <p className="text-xl font-chelsea-market text-center">
+                The only meme everyone relate to
+              </p>
+              <Button variant="secondary" className="mt-4" asChild><a href="#about">Discover</a></Button>
+            </div>
           </div>
-          <div className="container mx-auto mb-4">
+          <div className="container mx-auto p-4">
             <h2 id="about" className="text-3xl font-bold pt-[4.5rem] mt-[-4.5rem]">About WorriedGuy</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 mt-4 overflow-hidden">
               <div>
-               <span className="mr-4 break-words">CA: DT3zuw4qzDw2Fp6Uh5W1aMZBK2wfGWZWjJUfJY9Qpump</span>
-               <CopyButton textToCopy="DT3zuw4qzDw2Fp6Uh5W1aMZBK2wfGWZWjJUfJY9Qpump" />
+               <div className="flex items-center">
+                 <div className="mr-4 text-ellipsis overflow-hidden whitespace-nowrap">CA: DT3zuw4qzDw2Fp6Uh5W1aMZBK2wfGWZWjJUfJY9Qpump</div>
+                 <CopyButton textToCopy="DT3zuw4qzDw2Fp6Uh5W1aMZBK2wfGWZWjJUfJY9Qpump" />
+               </div>
                <Card className="max-w-[500px] mt-4 mx-auto">
                  <CardHeader>
                    <CardTitle>Philb acknowledgement</CardTitle>
@@ -57,6 +61,12 @@ function App() {
             </div>
           </div>
         </main>
+        <footer className="border-t bg-[#8c8773] flex justify-center items-center">
+          <span>Just a Worried Guy -</span>
+          <Button asChild variant='link' className='text-black'>
+            <a href="https://github.com/kevinmessiaen/worriedguy-website" target="_blank" rel="noreferrer" aria-label="Contribute to this website">Contribute</a>
+          </Button>
+        </footer>
       </ThemeProvider>
     </>
   )

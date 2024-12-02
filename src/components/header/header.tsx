@@ -11,7 +11,10 @@ import {IconMenu2} from "@tabler/icons-react";
 const Header =() => {
   return (
     <header className="sticky top-0 z-50 bg-background border-b">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <span className="font-bold font-chelsea-market">
+          WorriedGuy
+        </span>
         <div className="flex-1" />
         <ul className="hidden font-bold text-xl md:flex p-0 space-x-2 rtl:space-x-reverse mt-0n">
           <li>
