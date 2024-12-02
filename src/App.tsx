@@ -24,7 +24,7 @@ function App() {
             <Button variant="outline" className="font-chelsea-market mt-4" asChild><a href="#about">Discover</a></Button>
           </div>
           <div className="container mx-auto mb-4">
-            <h2 id="about" className="text-3xl font-bold">About WorriedGuy</h2>
+            <h2 id="about" className="text-3xl font-bold pt-[4.5rem] mt-[-4.5rem]">About WorriedGuy</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
               <div>
                <span className="mr-4 break-words">CA: DT3zuw4qzDw2Fp6Uh5W1aMZBK2wfGWZWjJUfJY9Qpump</span>
