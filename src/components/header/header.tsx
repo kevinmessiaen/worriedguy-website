@@ -10,7 +10,7 @@ import {IconMenu2} from "@tabler/icons-react";
 
 const Header =() => {
   return (
-    <header className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 sticky top-0 z-50">
+    <header className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 sticky top-0 z-50 bg-background">
       <div className="flex-1" />
       <ul className="hidden font-bold text-xl md:flex p-0 space-x-2 rtl:space-x-reverse mt-0n">
         <li>
