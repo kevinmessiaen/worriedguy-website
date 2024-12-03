@@ -12,9 +12,9 @@ const Header =() => {
   return (
     <header className="sticky top-0 z-50 bg-background border-b">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <span className="font-bold font-chelsea-market">
-          WorriedGuy
-        </span>
+        <Button asChild variant="ghost" className="font-bold font-chelsea-market">
+          <a href="/">WorriedGuy</a>
+        </Button>
         <div className="flex-1" />
         <ul className="hidden font-bold text-xl md:flex p-0 space-x-2 rtl:space-x-reverse mt-0n">
           <li>
@@ -24,7 +24,7 @@ const Header =() => {
           </li>
           <li>
             <Button asChild variant='ghost'>
-              <a href="https://x.com/WorriedGuyCTO1" target="_blank" rel="noreferrer" aria-label="Follow us on X"><X /></a>
+              <a href="https://x.com/WorriedGuyX" target="_blank" rel="noreferrer" aria-label="Follow us on X"><X /></a>
             </Button>
           </li>
           <li>
